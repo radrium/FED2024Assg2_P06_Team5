@@ -51,8 +51,9 @@ header nav {
 }
 
 /* Search Bar */
-.search-container {
+.search-container form {
     float: right;
+    flex-direction: row;
 }
   
 input[type=text] {
@@ -74,4 +75,107 @@ input[type=text] {
 
 .search-container button:hover {
     background: #ccc;
+}
+
+/* Product Gallery */
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2%;
+}
+
+.product-gallery article h3, .product-gallery article p {
+    text-align: start;
+    background-color: #c0c0c0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-gallery article {
+    text-align: center;
+    background-color: #c0c0c0;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;    
+}
+
+.product-gallery article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(164, 164, 164, 0.3);
+}
+
+.product-gallery img {
+    max-width: 100%;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-self: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 2%;
+}
+
+.contact-container article {
+    width: 40%;
+}
+
+#Split {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Split p {
+    color: red;
+}
+
+/* Contact Form */
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#firstName, #lastName {
+    width: 45%;
+}
+  
+.name-fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+  
+input, textarea {
+    padding: 12px;
+    border: 1px solid;
+    border-color: #c0c0c0;
+    background: #fff;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+  
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #c0c0c0;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
