@@ -59,6 +59,7 @@ header nav {
 input[type=text] {
     padding: 7px;
     margin-top: 8px;
+    margin-bottom: 8px;
     font-size: 17px;
     border: none;
 }
@@ -71,6 +72,8 @@ input[type=text] {
     font-size: 17px;
     border: none;
     cursor: pointer;
+    width: 40px;
+    height: 34px;
 }
 
 .search-container button:hover {
@@ -130,6 +133,8 @@ input[type=text] {
 }
 
 #Split {
+    padding-left: 2%;
+    padding-right: 2%;
     display: flex;
     justify-content: space-between;
 }
