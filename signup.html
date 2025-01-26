@@ -13,7 +13,7 @@
                 <!-- <li><a href="index.html"><img src="Image/Logo.png" width="30" alt="Logo"></a></li> -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="about.html">About</a></li> -->
                 <li><a href="contact.html">Contact</a></li> 
                 <li><a href="login.html">Login</a></li>
                 <li><a href="signup.html">Sign Up</a></li>
@@ -26,6 +26,21 @@
             </ul>
         </nav>
     </header>
-
+    <section style="padding: 50px 25px;" class="hero">
+        <article class="login-container">
+            <h2>Sign Up</h2>
+            <form action="signup.php">
+                <div id= "user-login">
+                    <input type="text" name="username" placeholder = "Username" required="" id="login-username">
+                    <input type="phone" name="phone" placeholder="Phone Number" require="" id="">
+                    <input type="email" name="email" placeholder="Email" require="" id="">
+                    <input type="password" name="password" placeholder="Password" require="" id="">
+                    <input type="password" name="confirm password" placeholder="Confirm Password" require="" id="login-password">
+                    <input type="submit" name="submit" value="Submit" id="login-submit" class="submit-btn">
+                </div>
+            </form>
+            <h2>Existing member? <a href="login.html" style="color: red;">Login</a></h2>
+        </article>
+    </section>
 </body>
 </html>
