@@ -9,7 +9,13 @@ document.addEventListener('DOMContentLoaded', function() {
         let phone = document.getElementById("signup-phone").value;
         let email = document.getElementById("signup-email").value;
         let password = document.getElementById("signup-password").value;
-        
+        let confirmPassword = document.getElementById("signup-confirm-password").value;
+
+        if (confirmPassword !== password) {
+            alert("Passwords do not match");
+            return;
+        }
+    
         //get form values when submit button is clicked
         let jsondata = {
             "username": userName,
@@ -32,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById("signup-submit").disabled = true;
             }
         }
-        fetch("https://fedassg2-2419.restdb.io/rest/user-signup-data", settings)
+        fetch("https://fedassg2-2419.restdb.io/rest/user-data", settings)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
