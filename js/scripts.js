@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById("login-password").reset();
             }
         }
-        fetch("https://fedassg2-2419.restdb.io/rest/user-signup-data", settings)
+        fetch("https://fedassg2-2419.restdb.io/rest/user-login-data", settings)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
