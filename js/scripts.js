@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const APIKEY = '678e048fb0ed22eec94487fa'
     //create submit form listener
-    document.getElementById("login-submit").addEventListener("click", function(e) {
+    document.getElementById("signup-submit").addEventListener("click", function(e) {
         e.preventDefault();
 
         //get the form data
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             body: JSON.stringify(jsondata),
             beforeSend: function() {
                 //disable the submit button
-                document.getElementById("login-submit").disabled = true;
+                document.getElementById("signup-submit").disabled = true;
                 //reset the form
                 document.getElementById("login-username").reset();
                 document.getElementById("login-password").reset();
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.json())
             .then(data => {
                 console.log(data);
-                document.getElementById("login-submit").disabled = false;
+                document.getElementById("signup-submit").disabled = false;
             });
         });
     });
