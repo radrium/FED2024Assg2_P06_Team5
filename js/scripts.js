@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const APIKEY = '6796f154f9d2bbc852181e24'
     //create submit form listener
-    document.getElementById("signup-submit").addEventListener("click", function(e) {
+    document.getElementById("login-submit").addEventListener("click", function(e) {
         e.preventDefault();
 
         //get the form data
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             beforeSend: function() {
                 alert("test");
                 //disable the submit button
-                document.getElementById("signup-submit").disabled = true;
+                document.getElementById("login-submit").disabled = true;
                 //reset the form
                 document.getElementById("signup-username").reset();
                 document.getElementById("signup-phone").reset();
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.json())
             .then(data => {
                 console.log(data);
-                document.getElementById("signup-submit").disabled = false;
+                document.getElementById("login-submit").disabled = false;
             });
         });
     });
