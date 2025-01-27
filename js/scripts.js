@@ -28,14 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             body: JSON.stringify(jsondata),
             beforeSend: function() {
-                alert("test");
                 //disable the submit button
                 document.getElementById("signup-submit").disabled = true;
-                //reset the form
-                document.getElementById("signup-username").reset();
-                document.getElementById("signup-phone").reset();
-                document.getElementById("signup-email").reset();
-                document.getElementById("signup-password").reset();
             }
         }
         fetch("https://fedassg2-2419.restdb.io/rest/user-signup-data", settings)
@@ -43,6 +37,13 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(data => {
                 console.log(data);
                 document.getElementById("signup-submit").disabled = false;
+                //reset the form
+                document.getElementById("signup-username").value = "";
+                document.getElementById("signup-phone").value = "";
+                document.getElementById("signup-email").value = "";
+                document.getElementById("signup-password").value = "";
+                document.getElementById("signup-confirm-password").value = "";
+                alert("Sign up successful");
             });
         });
     });
