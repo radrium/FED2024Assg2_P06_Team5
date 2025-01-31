@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //create submit form listener
     document.getElementById("contact-form-submit").addEventListener("click", function(e) {
         e.preventDefault();
-
+        
         //get the form data
         let firstName = document.getElementById("firstName").value;
         let lastName = document.getElementById("lastName").value;
