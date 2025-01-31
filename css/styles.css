@@ -42,6 +42,15 @@ header nav {
     text-decoration: underline;
 }
 
+#login-btn, #signup-btn, #icon-btn {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#icon-btn #signout-btn {
+    display: none;
+}
+
 /* Banner */
 .hero {
     text-align: center;
