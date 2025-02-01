@@ -10,13 +10,19 @@
         <header>
             <nav>
                 <ul class="nav-links">
-                    <li><img src="../Images/Icon.png" id="icon-btn" width="30" alt="Logo"></a></li>
+                    <div class="dropdown">
+                        <button class="dropicon"><img src="../Images/Icon.png" id="icon-btn" width="30px"></button>
+                        <div class="dropdown-content">
+                            <a href="#">Edit Profile</a>
+                            <a href="#">Feedback</a>
+                            <a href="#" id="signout-btn">Sign Out</a>
+                        </div>
+                    </div>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <!-- <li><a href="html/about.html">About</a></li> -->
-                    <li><a href="contact.html">Contact</a></li> 
-                    <li><a href="login.html" id="login-btn">Login</a></li>
-                    <li><a href="signup.html" id="signup-btn">Sign Up</a></li>
+                    <li><a href="../html/shop.html">Shop</a></li>
+                    <li><a href="../html/contact.html">Contact</a></li> 
+                    <li><a href="../html/login.html" id="login-btn">Login</a></li>
+                    <li><a href="../html/signup.html" id="signup-btn">Sign Up</a></li>
                     <div class="search-container">
                         <form action="/action_page.php">
                           <input type="text" placeholder="Search.." name="search">
@@ -56,4 +62,5 @@
         </section>
     </body>
     <script src="../js/contact.js"></script>
+    <script src="../js/script.js" defer></script>
 </html>

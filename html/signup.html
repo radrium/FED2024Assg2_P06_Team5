@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="nav-links">
-                <li><img src="../Images/Icon.png" id="icon-btn" width="30" alt="Logo"></a></li>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <!-- <li><a href="about.html">About</a></li> -->
-                <li><a href="contact.html">Contact</a></li> 
-                <li><a href="login.html" id="login-btn">Login</a></li>
-                <li><a href="signup.html" id="signup-btn">Sign Up</a></li>
-                <div class="search-container">
-                    <form action="/action_page.php">
-                      <input type="text" placeholder="Search.." name="search">
-                      <button type="submit">&#128270</button>
-                    </form>
-                </div>
-            </ul>
-        </nav>
-    </header>
-    <section style="padding: 50px 25px;" class="hero">
-        <article class="login-container">
-            <h2>Sign Up</h2>
-            <form action="signup.php">
-                <div id= "user-signup">
-                    <input type="text" name="username" placeholder = "Username" id="signup-username" required>
-                    <input type="phone" name="phone" placeholder="Phone Number" id="signup-phone" required>
-                    <input type="email" name="email" placeholder="Email" id="signup-email" required>
-                    <input type="password" name="password" placeholder="Password" id="signup-password" required>
-                    <input type="password" name="confirm password" placeholder="Confirm Password" id="signup-confirm-password" required>
-                    <input type="submit" name="submit" value="Submit" id="signup-submit" class="submit-btn" required>
-                </div>
-            </form>
-            <h2>Existing member? <a href="login.html" style="color: red;">Login</a></h2>
-        </article>
-    </section>
-<script src="../js/signup.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <div class="dropdown">
+                        <button class="dropicon"><img src="../Images/Icon.png" id="icon-btn" width="30px"></button>
+                        <div class="dropdown-content">
+                            <a href="#">Edit Profile</a>
+                            <a href="#">Feedback</a>
+                            <a href="#" id="signout-btn">Sign Out</a>
+                        </div>
+                    </div>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/shop.html">Shop</a></li>
+                    <li><a href="../html/contact.html">Contact</a></li> 
+                    <li><a href="../html/login.html" id="login-btn">Login</a></li>
+                    <li><a href="../html/signup.html" id="signup-btn">Sign Up</a></li>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">&#128270</button>
+                        </form>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <section style="padding: 50px 25px;" class="hero">
+            <article class="login-container">
+                <h2>Sign Up</h2>
+                <form action="signup.php">
+                    <div id= "user-signup">
+                        <input type="text" name="username" placeholder = "Username" id="signup-username" required>
+                        <input type="phone" name="phone" placeholder="Phone Number" id="signup-phone" required>
+                        <input type="email" name="email" placeholder="Email" id="signup-email" required>
+                        <input type="password" name="password" placeholder="Password" id="signup-password" required>
+                        <input type="password" name="confirm password" placeholder="Confirm Password" id="signup-confirm-password" required>
+                        <input type="submit" name="submit" value="Submit" id="signup-submit" class="submit-btn" required>
+                    </div>
+                </form>
+                <h2>Existing member? <a href="login.html" style="color: red;">Login</a></h2>
+            </article>
+        </section>
+    </body>
+    <script src="../js/signup.js"></script>
 </html>
