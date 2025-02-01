@@ -57,7 +57,7 @@ header nav {
 .hero {
     text-align: center;
     padding: 120px 25px;
-    background-image: url('../images/hero.jpg');
+    background-image: url('../Images/hero.jpg');
     background-size: cover;
     background-position: center;
 }
