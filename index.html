@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Home</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="nav-links">
-                <li><img src="Images/Icon.png" id="icon-btn" width="30" alt="Logo"></a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html/shop.html">Shop</a></li>
-                <li><a href="html/contact.html">Contact</a></li> 
-                <li><a href="html/login.html" id="login-btn">Login</a></li>
-                <li><a href="html/signup.html" id="signup-btn">Sign Up</a></li>
-                <li><a href="#" id="signout-btn">Sign Out</a></li>
-                <div class="search-container">
-                    <form action="/action_page.php">
-                      <input type="text" placeholder="Search.." name="search">
-                      <button type="submit">&#128270</button>
-                    </form>
-                </div>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero">
-        <h1>Welcome to MokeSell!!</h1>
-    </section>
-
-    <section class="contatiner">
-        <section id="Split">
-            <h1>Promotion</h1>
-            <a href="html/shop.html">See More</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <title>Home</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <div class="dropdown">
+                        <button class="dropicon"><img src="../Images/Icon.png" id="icon-btn" width="30px"></button>
+                        <div class="dropdown-content">
+                            <a href="#">Edit Profile</a>
+                            <a href="#">Feedback</a>
+                            <a href="#" id="signout-btn">Sign Out</a>
+                        </div>
+                    </div>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html/shop.html">Shop</a></li>
+                    <li><a href="html/contact.html">Contact</a></li> 
+                    <li><a href="html/login.html" id="login-btn">Login</a></li>
+                    <li><a href="html/signup.html" id="signup-btn">Sign Up</a></li>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">&#128270</button>
+                        </form>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <h1>Welcome to MokeSell!!</h1>
         </section>
-        <section class="product-gallery" id="promotion">
-            <a href="html/product.html">
+
+        <section class="contatiner">
+            <section id="Split">
+                <h1>Promotion</h1>
+                <a href="html/shop.html">See More</a>
+            </section>
+            <section class="product-gallery" id="promotion">
+                <a href="html/product.html">
+                    <article>
+                        <img src="Images/Product/product1.png" alt="Product Image">
+                    </article>
+                </a>
                 <article>
-                    <img src="Images/Product/product1.png" alt="Product Image">
+                    <img src="Images/Product/product2.png" alt="Product Image">
                 </article>
-            </a>
-            <article>
-                <img src="Images/Product/product2.png" alt="Product Image">
-            </article>
-            <article>
-                <img src="Images/Product/product3.png" alt="Product Image">
-            </article>
-            <article>
-                <img src="Images/Product/product4.png" alt="Product Image">
-            </article>
-        </section>
-        <section id="Split">
-        <h1>Brand</h1>
-        <a href="html/shop.html">See More</a>
-        </section>
-        <section class="product-gallery" id="brand">
-            <article onclick="">
-                <img src="Images/Brands/logo1.png" alt="Product Image">
-            </article>
-            <article>
-                <img src="Images/Brands/logo2.png" alt="Product Image">
-            </article>
-            <article>
-                <img src="Images/Brands/logo3.png" alt="Product Image">
-            </article>
-            <article>
-                <img src="Images/Brands/logo4.png" alt="Product Image">
-            </article>
-        </section>
-        <section id="Split">
-            <h1>Category</h1>
+                <article>
+                    <img src="Images/Product/product3.png" alt="Product Image">
+                </article>
+                <article>
+                    <img src="Images/Product/product4.png" alt="Product Image">
+                </article>
+            </section>
+            <section id="Split">
+            <h1>Brand</h1>
             <a href="html/shop.html">See More</a>
-        </section>
-        <section class="product-gallery" id="category">
-            <article>
-                <h3>Jackets and Hoodies</h3>
-            </article>
-            <article>
-                <h3>Shirts</h3>
+            </section>
+            <section class="product-gallery" id="brand">
+                <article onclick="">
+                    <img src="Images/Brands/logo1.png" alt="Product Image">
+                </article>
+                <article>
+                    <img src="Images/Brands/logo2.png" alt="Product Image">
+                </article>
+                <article>
+                    <img src="Images/Brands/logo3.png" alt="Product Image">
+                </article>
+                <article>
+                    <img src="Images/Brands/logo4.png" alt="Product Image">
+                </article>
+            </section>
+            <section id="Split">
+                <h1>Category</h1>
+                <a href="html/shop.html">See More</a>
+            </section>
+            <section class="product-gallery" id="category">
+                <article>
+                    <h3>Jackets and Hoodies</h3>
+                </article>
+                <article>
+                    <h3>Shirts</h3>
 
-            </article>
-            <article>
-                <h3>Shorts and Pants</h3>
-            </article>
-            <article>
-                <h3>Accessory</h3>
-            </article>
+                </article>
+                <article>
+                    <h3>Shorts and Pants</h3>
+                </article>
+                <article>
+                    <h3>Accessory</h3>
+                </article>
+            </section>
         </section>
-    </section>
-</body>
+    </body>
     <script src="js/script.js"></script>
 </html>
