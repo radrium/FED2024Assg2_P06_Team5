@@ -18,6 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
         let topic = document.getElementById("topic").value;
         let message = document.getElementById("message").value;
 
+        if (email === "" || phone === "" || topic === "" || message === "") {
+            alert("Please fill in all the fields");
+            return;
+        }
+
         //get form values when submit button is clicked
         let jsondata = {
             "username": loggedInUser.username,
@@ -49,9 +54,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log(data);
                 document.getElementById("contact-form-submit").disabled = false;
                 //reset the form
-                document.getElementById("first_name").value = "";
-                document.getElementById("last_name").value = "";
-                document.getElementById("number").value = "";
+                document.getElementById("firstName").value = "";
+                document.getElementById("lastName").value = "";
+                document.getElementById("phone").value = "";
                 document.getElementById("email").value = "";
                 document.getElementById("topic").value = "";
                 document.getElementById("message").value = "";
