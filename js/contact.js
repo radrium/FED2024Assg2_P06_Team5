@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const APIKEY = '6796f154f9d2bbc852181e24'
+    const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+
+    if (!loggedInUser) {
+        alert('You need to be logged in to submit the contact form.');
+        return;
+    }
     //create submit form listener
     document.getElementById("contact-form-submit").addEventListener("click", function(e) {
         e.preventDefault();
@@ -14,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         //get form values when submit button is clicked
         let jsondata = {
+            "username": loggedInUser.username,
             "first_name": firstName,
             "last_name": lastName,
             "email": email,
