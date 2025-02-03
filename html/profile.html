@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile</title>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <div class="dropdown">
+                        <button class="dropicon"><img src="../Images/Icon.png" id="icon-btn" width="30px"></button>
+                        <div class="dropdown-content">
+                            <a href="../html/profile.html">Edit Profile</a>
+                            <a href="#">Feedback</a>
+                            <a href="#" id="signout-btn">Sign Out</a>
+                        </div>
+                    </div>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/shop.html">Shop</a></li>
+                    <li><a href="../html/contact.html">Contact</a></li> 
+                    <li><a href="../html/login.html" id="login-btn">Login</a></li>
+                    <li><a href="../html/signup.html" id="signup-btn">Sign Up</a></li>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Search.." name="search">
+                          <button type="submit">&#128270</button>
+                        </form>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="profile-container">
+            <div class="profile">
+                <h1>Profile</h1>
+                <form id="profile-form">
+                    <label>Username:</label>
+                    <input type="text" id="username" name="name" required>
+                    <label>Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <label>Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label>Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit" id="update-btn">Update</button>
+                </form>
+            </div>
+        </section>
+    </body>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/profile.js" defer></script>
+</html>
