@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/styles.css" rel="stylesheet" type="text/css">
+        <title>Friends</title>
+        <style>
+            
+        </style>
+    </head>
+
+    <body>
+        <header>
+        <nav>
+            <ul class="nav-links">
+                <div class="dropdown">
+                    <button class="dropicon"><img src="../Images/Icon.png" id="icon-btn" width="30px"></button>
+                    <div class="dropdown-content">
+                        <a href="../html/profile.html">Edit Profile</a>
+                        <a href="../html/friends.html">Friends</a>
+                        <a href="../html/feedback.html">Feedback</a>
+                        <a href="../index.html" id="signout-btn">Sign Out</a>
+                    </div>
+                </div>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/shop.html">Shop</a></li>
+                <li><a href="../html/contact.html">Contact</a></li> 
+                <li><a href="../html/login.html" id="login-btn">Login</a></li>
+                <li><a href="../html/signup.html" id="signup-btn">Sign Up</a></li>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">&#128270</button>
+                    </form>
+                </div>
+            </ul>
+        </nav>
+        </header>
+        <h1 class="title">Let's connect and be friends!</h1>
+        <div class="user-profile">
+            <img id="avatar" src="https://i.pravatar.cc/150?img=52">    
+            <div id="fullname">Jon Snow</div>
+            <div id="username">kingofnorth</div>
+            <div class="description">
+            <div>Email: <span id="email">jon@hotmail.com</span></div>
+            <div>City: <span id="city">Winterfell</span></div>
+            </div>
+            <div class="follow-btn">
+                <button id="follow-btn">Follow</button>
+            </div>
+            <div class="unfollow-btn" style="display: none;">
+                <button id="unfollow-btn">Unfollow</button>
+            </div>
+            <div class="next-user">
+                <button id="next-user">Next User!</button>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/follow.js"></script>
+</html>
