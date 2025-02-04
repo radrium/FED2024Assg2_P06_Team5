@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const APIKEY = '6796f154f9d2bbc852181e24'; // Define APIKEY here
+    const APIKEY = '67a19838c5f8d4c6e7e4d4e8'; // Define APIKEY here
     
     document.getElementById("login-submit").addEventListener("click", function(e) {
         e.preventDefault();
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
 
-        fetch("https://fedassg2-2419.restdb.io/rest/user-data", settings)
+        fetch("https://fedassg2-105b.restdb.io/rest/user-data", settings)
             .then(response => response.json())
             .then(data => {
                 console.log(data);

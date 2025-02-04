@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const APIKEY = '6796f154f9d2bbc852181e24'
+    const APIKEY = '67a19838c5f8d4c6e7e4d4e8'
     //create submit form listener
     document.getElementById("signup-submit").addEventListener("click", function(e) {
         e.preventDefault();
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById("signup-submit").disabled = true;
             }
         }
-        fetch("https://fedassg2-2419.restdb.io/rest/user-data", settings)
+        fetch("https://fedassg2-105b.restdb.io/rest/user-data", settings)
             .then(response => response.json())
             .then(data => {
                 console.log(data);

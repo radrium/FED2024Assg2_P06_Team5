@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const APIKEY = '6796f154f9d2bbc852181e24'
+    const APIKEY = '67a19838c5f8d4c6e7e4d4e8'
     const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 
     if (!loggedInUser) {
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById("contact-form-submit").disabled = true;
             }
         }
-        fetch("https://fedassg2-2419.restdb.io/rest/feedback-form", settings)
+        fetch("https://fedassg2-105b.restdb.io/rest/feedback-form", settings)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
