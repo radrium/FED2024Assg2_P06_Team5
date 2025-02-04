@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const APIKEY = '67a19838c5f8d4c6e7e4d4e8'; // Define APIKEY here
+    const APIKEY = '67a1c864c5f8d453aae4d4fe'; // Define APIKEY here
     
     document.getElementById("update-btn").addEventListener("click", function(e) {
         e.preventDefault();
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         };
 
-        fetch("https://fedassg2-105b.restdb.io/rest/user-data", settings)
+        fetch("https://fedassg2-3250.restdb.io/rest/user-data", settings)
         .then(response => response.json())
         .then(data => {
             // Find the user to update
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 };
 
                 // Send the updated user data
-                fetch(`https://fedassg2-105b.restdb.io/rest/user-data/${user._id}`, updateSettings)
+                fetch(`https://fedassg2-3250.restdb.io/rest/user-data/${user._id}`, updateSettings)
                 .then(response => response.json())
                 .then(updatedData => {
                     console.log(updatedData);

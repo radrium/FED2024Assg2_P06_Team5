@@ -16,7 +16,7 @@ function loginUser(user) {
 
 document.addEventListener("DOMContentLoaded", function () {
   // This is our API key
-  const APIKEY = '67a19838c5f8d4c6e7e4d4e8';
+  const APIKEY = '67a1c864c5f8d453aae4d4fe';
 
   // We call our function to get our feedbacks
   getFeedbacks();
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // We fetch our feedbacks from the database
-    fetch("https://fedassg2-105b.restdb.io/rest/feedback-form", settings)
+    fetch("https://fedassg2-3250.restdb.io/rest/feedback-form", settings)
       .then(response => response.json())
       .then(response => {
         let content = "";
