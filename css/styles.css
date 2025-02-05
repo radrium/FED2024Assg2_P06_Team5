@@ -45,8 +45,7 @@ header nav {
 }
 
 #login-btn, #signup-btn, #icon-btn {
-    display: inline-block;
-    margin: 0 10px;
+    display: flex;
 }
 
 #icon-btn {
@@ -88,6 +87,61 @@ header nav {
 
 .dropdown:hover .dropicon {background-color: #c5bc55;}
 
+/* Hamburger bar */
+.title {
+    font-size: 26px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    right: 35%;
+    z-index: 2;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
 /* Banner */
 .hero {
     text-align: center;
@@ -108,6 +162,7 @@ header nav {
     margin-bottom: 8px;
     font-size: 17px;
     border: none;
+    width: 150px;
 }
 
 .search-container button {
@@ -129,7 +184,7 @@ header nav {
 /* Product Gallery */
 .product-gallery {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 1% 2%;
 }
@@ -526,4 +581,60 @@ article.product-details {
 {
     display: block;
     text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 850px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .title {
+        display: block;
+    }
+
+    .dropicon {
+        padding: 10px;
+    }
+
+    .dropdown {
+        left: 35%;
+    }
+
+    .dropdown-content {
+        right: 0;
+    }
+    
+}
+
+/* Mobile view */
+@media screen and (max-width: 476px) {
+    /* Contact Pages */
+    /* Container */
+    .contact-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contact-container article {
+        width: 90%;
+    }
+
+    /* Margin for the icons */
+    .Icon-and-Details{
+        margin: 5% 0;
+    }
+    
+    .name-fields {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #firstName, #lastName {
+        width: 100%;
+    }
 }
