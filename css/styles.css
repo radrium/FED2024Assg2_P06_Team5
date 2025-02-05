@@ -129,7 +129,7 @@ header nav {
 /* Product Gallery */
 .product-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4,1fr);
     gap: 20px;
     padding: 1% 2%;
 }
@@ -198,6 +198,11 @@ header nav {
 
 #Split a {
     color: red;
+}
+
+.categories a
+{
+    text-decoration: none;
 }
 
 /* Contact Form */
@@ -320,7 +325,7 @@ article.product-details {
     width: 100%;
 }
 
-.profile-form,#update-btn {
+.profile-form, #update-btn {
     padding: 12px;
     background: #c0c0c0;
     font-size: 16px;
@@ -506,4 +511,19 @@ article.product-details {
 
 .feedback-container #delete-msg {
     margin-bottom: 20px;
+}
+
+/* category page */
+.header
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 36px;
+}
+
+.items
+{
+    display: block;
+    text-align: center;
 }
