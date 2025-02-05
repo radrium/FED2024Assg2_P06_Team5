@@ -3,13 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
     if (loggedInUser) {
         document.getElementById('login-btn').style.display = 'none';
         document.getElementById('signup-btn').style.display = 'none';
+        document.getElementById('sidenav-login-btn').style.display = 'none';
+        document.getElementById('sidenav-signup-btn').style.display = 'none';
         document.getElementById('icon-btn').style.display = 'block';
-
     } else {
         document.getElementById('login-btn').style.display = 'block';
         document.getElementById('signup-btn').style.display = 'block';
+        document.getElementById('sidenav-login-btn').style.display = 'block';
+        document.getElementById('sidenav-signup-btn').style.display = 'block';
         document.getElementById('icon-btn').style.display = 'none';
-        // document.querySelector('.user-panel').style.display = 'none';
     }
 
     // alert('test');
@@ -20,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('You have been signed out.');
             document.getElementById('login-btn').style.display = 'block';
             document.getElementById('signup-btn').style.display = 'block';
+            document.getElementById('sidenav-login-btn').style.display = 'block';
+            document.getElementById('sidenav-signup-btn').style.display = 'block';
             document.getElementById('icon-btn').style.display = 'none';
         });
     }
@@ -29,3 +33,11 @@ function loginUser(user) {
     // Assuming `user` is the logged-in user object
     localStorage.setItem('loggedInUser', JSON.stringify(user));
 }
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+} 
