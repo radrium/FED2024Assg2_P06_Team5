@@ -6,33 +6,52 @@
         <title>Category</title>
         <link rel="stylesheet" type="text/css" href="../css/styles.css">
     </head>
-    <header>
-        <nav>
-            <ul class="nav-links">
-                <div class="dropdown">
-                    <button class="dropicon"><img src="../Images/Icon.png" id="icon-btn" width="30px"></button>
-                    <div class="dropdown-content">
-                        <a href="../html/profile.html">Edit Profile</a>
-                        <a href="../html/friends.html" id="friends-page">Friends</a>
-                        <a href="../html/feedback.html">Feedback</a>
-                        <a href="javascript:void(0)" id="signout-btn">Sign Out</a>
-                    </div>
-                </div>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../html/shop.html">Shop</a></li>
-                <li><a href="../html/contact.html">Contact</a></li> 
-                <li><a href="../html/login.html" id="login-btn">Login</a></li>
-                <li><a href="../html/signup.html" id="signup-btn">Sign Up</a></li>
-                <div class="search-container">
-                    <form action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit">&#128270</button>
-                    </form>
-                </div>
-            </ul>
-        </nav>
-    </header>
     <body>
+        <header>
+            <nav>
+                <span class="hamburger" onclick="openNav()">&#9776;</span>
+                <b class="title">Category</b>
+                <ul class="nav-links">
+                    <div class="dropdown" id="icon-btn">
+                        <button class="dropicon"><img src="../Images/Icon.png" width="30px"></button>
+                        <div class="dropdown-content">
+                            <a href="../html/profile.html">Edit Profile</a>
+                            <a href="../html/friends.html" id="friends-page">Friends</a>
+                            <a href="../html/feedback.html">Feedback</a>
+                            <a href="javascript:void(0)" id="signout-btn">Sign Out</a>
+                        </div>
+                    </div>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/shop.html">Shop</a></li>
+                    <li><a href="../html/contact.html">Contact</a></li> 
+                    <li><a href="../html/login.html" id="login-btn">Login</a></li>
+                    <li><a href="../html/signup.html" id="signup-btn">Sign Up</a></li>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">&#128270</button>
+                        </form>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="dropdown" id="icon-btn">
+                <button class="dropicon"><img src="../Images/Icon.png" width="30px"></button>
+                <div class="dropdown-content">
+                    <a href="../html/profile.html">Edit Profile</a>
+                    <a href="../html/friends.html" id="friends-page">Friends</a>
+                    <a href="../html/feedback.html">Feedback</a>
+                    <a href="javascript:void(0)" id="signout-btn">Sign Out</a>
+                </div>
+            </div>
+            <a href="../index.html">Home</a>
+            <a href="../html/shop.html">Shop</a>
+            <a href="../html/contact.html">Contact</a>
+            <a href="../html/login.html" id="sidenav-login-btn">Login</a>
+            <a href="../html/signup.html" id="sidenav-signup-btn">Sign Up</a>
+        </div>
         <h1 class="header">Jackets and Hoodies</h1>
         <section class="contatiner">
             <section class="product-gallery" id="promotion">

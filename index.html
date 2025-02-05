@@ -9,9 +9,20 @@
     <body>
         <header>
             <nav>
+                <span class="hamburger" onclick="openNav()">&#9776;</span>
+                <b class="title">Home</b>
+                <div class="dropdown" id="icon-btn" style="display: block;">
+                    <button class="dropicon"><img src="Images/Icon.png" width="30px"></button>
+                    <div class="dropdown-content">
+                        <a href="html/profile.html">Edit Profile</a>
+                        <a href="html/friends.html" id="friends-page">Friends</a>
+                        <a href="html/feedback.html">Feedback</a>
+                        <a href="javascript:void(0)" id="signout-btn">Sign Out</a>
+                    </div>
+                </div>
                 <ul class="nav-links">
-                    <div class="dropdown">
-                        <button class="dropicon"><img src="Images/Icon.png" id="icon-btn" width="30px"></button>
+                    <div class="dropdown" id="icon-btn">
+                        <button class="dropicon"><img src="Images/Icon.png" width="30px"></button>
                         <div class="dropdown-content">
                             <a href="html/profile.html">Edit Profile</a>
                             <a href="html/friends.html" id="friends-page">Friends</a>
@@ -33,6 +44,14 @@
                 </ul>
             </nav>
         </header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="html/shop.html">Shop</a>
+            <a href="html/contact.html">Contact</a>
+            <a href="html/login.html" id="sidenav-login-btn">Login</a>
+            <a href="html/signup.html" id="sidenav-signup-btn">Sign Up</a>
+        </div>
         <section class="hero" style="background-position: center;">
             <h1>Welcome to MokeSell!!</h1>
         </section>
