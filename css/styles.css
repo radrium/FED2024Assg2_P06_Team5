@@ -320,7 +320,7 @@ article.product-details {
     width: 100%;
 }
 
-.profile-form #update-btn {
+.profile-form,#update-btn {
     padding: 12px;
     background: #c0c0c0;
     font-size: 16px;
