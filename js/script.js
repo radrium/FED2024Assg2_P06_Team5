@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('icon-btn').style.display = 'none';
     }
 
-    // alert('test');
     const signoutBtn = document.getElementById('signout-btn');
     if (signoutBtn) {
         signoutBtn.addEventListener('click', function() {
@@ -25,6 +24,45 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('sidenav-login-btn').style.display = 'block';
             document.getElementById('sidenav-signup-btn').style.display = 'block';
             document.getElementById('icon-btn').style.display = 'none';
+        });
+    }
+
+    const searchForm = document.getElementById('search-form');
+    const searchInput = document.getElementById('search-bar');
+
+    searchForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        filterProducts();
+    });
+
+    function filterProducts() {
+        const query = searchInput.value.toLowerCase();
+        const categories = document.querySelectorAll('.category-section');
+        
+        categories.forEach(category => {
+            const products = category.querySelectorAll('.product-gallery article');
+            let anyProductVisible = false; // Flag to check if any product in the category is visible
+
+            products.forEach(product => {
+                const productName = product.querySelector('img').alt.toLowerCase();
+                
+                // Check if product matches search query
+                const isSearchMatch = productName.includes(query);
+                
+                if (isSearchMatch) {
+                    product.style.display = 'block'; // Show product
+                    anyProductVisible = true; // At least one product matches
+                } else {
+                    product.style.display = 'none'; // Hide product
+                }
+            });
+
+            // Hide category section if no products are visible
+            if (anyProductVisible) {
+                category.style.display = 'block'; // Show category section
+            } else {
+                category.style.display = 'none'; // Hide category section
+            }
         });
     }
 });

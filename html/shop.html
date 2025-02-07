@@ -27,14 +27,15 @@
                     <li><a href="../html/login.html" id="login-btn">Login</a></li>
                     <li><a href="../html/signup.html" id="signup-btn">Sign Up</a></li>
                     <li class="search-container">
-                        <form>
-                            <input type="text" placeholder="Search.." name="search">
+                        <form id="search-form">
+                            <input type="text" id="search-bar" placeholder="Search..." name="search">
                             <button type="submit">&#128270;</button>
                         </form>
                     </li>
                 </ul>
             </nav>
         </header>
+
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="../index.html">Home</a>
@@ -44,77 +45,78 @@
             <a href="../html/signup.html" id="sidenav-signup-btn">Sign Up</a>
         </div>
         <section class="contatiner">
-            <section class="Split">
+            <section id="nike" class="category-section">
                 <h1>Nike</h1>
-            </section>
-            <section class="product-gallery promotion">
-                <a href="product.html">
-                    <article>
-                        <img src="../Images/promotion/product1.png" alt="Product Image">
+                <section class="product-gallery">
+                    <article data-category="nike">
+                        <img src="../Images/brand_products/nike/nike1.png" alt="Nike Hoodie">
                     </article>
-                </a>
-                <article>
-                    <img src="../Images/brand_products/nike/nike2.png" alt="Product Image">
-                </article>
-                <article>
-                    <img src="../Images/brand_products/nike/nike3.png" alt="Product Image">
-                </article>
-                <article>
-                    <img src="../Images/brand_products/nike/nike4.png" alt="Product Image">
-                </article>
+                    <article data-category="nike">
+                        <img src="../Images/brand_products/nike/nike2.png" alt="Nike Shoes">
+                    </article>
+                    <article data-category="nike">
+                        <img src="../Images/brand_products/nike/nike3.png" alt="Nike Pants">
+                    </article>
+                    <article data-category="nike">
+                        <img src="../Images/brand_products/nike/nike4.png" alt="Nike Gloves">
+                    </article>
+                </section>
             </section>
-            <section id="Split">
+            
+            <section id="adidas" class="category-section">
                 <h1>Adidas</h1>
+                <section class="product-gallery adidas">
+                    <article data-category="adidas">
+                        <img src="../Images/brand_products/adidas/adidas1.png" alt="Adidas Shoes">
+                    </article>
+                    <article data-category="adidas">
+                        <img src="../Images/brand_products/adidas/adidas2.png" alt="Adidas Socks">
+                    </article>
+                    <article data-category="adidas">
+                        <img src="../Images/brand_products/adidas/adidas3.png" alt="Adidas Jacket">
+                    </article>
+                    <article data-category="adidas">
+                        <img src="../Images/brand_products/adidas/adidas4.png" alt="Adidas Shoes">
+                    </article>
+                </section>
             </section>
-            <section class="product-gallery promotion">
-                <article>
-                    <img src="../Images/brand_products/adidas/adidas1.png" alt="Product Image">
-                </article>
-                <article>
-                    <img src="../Images/brand_products/adidas/adidas2.png" alt="Product Image">
-                </article>
-                <article>
-                    <img src="../Images/brand_products/adidas/adidas3.png" alt="Product Image">
-                </article>
-                <article>
-                    <img src="../Images/brand_products/adidas/adidas4.png" alt="Product Image">
-                </article>
-            </section>
-            <section class="Split">
+
+            <section id="bape" class="category-section">
                 <h1>Bape</h1>
+                <section class="product-gallery bape">
+                    <article data-category="bape">
+                        <img src="../Images/brand_products/bape/bape1.png" alt="Bape Hoodie">
+                    </article>
+                    <article data-category="bape">
+                        <img src="../Images/brand_products/bape/bape2.png" alt="Bape Hoodie">
+                    </article>
+                    <article data-category="bape">
+                        <img src="../Images/brand_products/bape/bape3.png" alt="Bape Hoodie">
+                    </article>
+                    <article data-category="bape">
+                        <img src="../Images/brand_products/bape/bape4.png" alt="Bape Hoodie">
+                    </article>
+                </section>
             </section>
-            <section class="product-gallery promotion">
-                <article>
-                    <img src="../Images/brand_products/bape/bape1.png" alt="Product Image">
-                </article>
-                <article>
-                    <img src="../Images/brand_products/bape/bape2.png" alt="Product Image">
-                </article>
-                <article>
-                    <img src="../Images/brand_products/bape/bape3.png" alt="Product Image">
-                </article>
-                <article>
-                    <img src="../Images/brand_products/bape/bape4.png" alt="Product Image">
-                </article>
-            </section>
-            <section class="Split">
+
+            <section id="eric-emanuel" class="category-section">
                 <h1>Eric Emanuel</h1>
-            </section>
-            <section class="product-gallery promotion">
-                <article>
-                    <img src="../Images/brand_products/ee/ee1.png" alt="Product Image">
-                </article>
-                <article>
-                    <img src="../Images/brand_products/ee/ee2.png" alt="Product Image">
-                </article>
-                <article>
-                    <img src="../Images/brand_products/ee/ee3.png" alt="Product Image">
-                </article>
-                <article>
-                    <img src="../Images/brand_products/ee/ee4.png" alt="Product Image">
-                </article>
+                <section class="product-gallery ee">
+                    <article data-category="ee">
+                        <img src="../Images/brand_products/ee/ee1.png" alt="Eric Emanuel Shorts">
+                    </article>
+                    <article data-category="ee">
+                        <img src="../Images/brand_products/ee/ee2.png" alt="Eric Emanuel Shorts">
+                    </article>
+                    <article data-category="ee">
+                        <img src="../Images/brand_products/ee/ee3.png" alt="Eric Emanuel Shorts">
+                    </article>
+                    <article data-category="ee">
+                        <img src="../Images/brand_products/ee/ee4.png" alt="Eric Emanuel Shorts">
+                    </article>
+                </section>
             </section>
         </section>
     <script src="../js/script.js" defer></script>
-</body>
+    </body>
 </html>
