@@ -586,6 +586,13 @@ article.product-details {
     text-align: center;
 }
 
+.category-section h1{ 
+    padding-top: 2%;
+    padding-left: 2%;
+    margin: 0;
+    font-size: 25px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 850px) {
     .nav-links {
