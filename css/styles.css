@@ -667,6 +667,11 @@ article.product-details {
         flex-direction: column;
         text-align: center;
     }
+
+    .search-container form {
+        float: none;
+        padding-left: 30px;
+    }
 }
 
 /* Mobile view */
