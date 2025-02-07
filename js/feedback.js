@@ -73,15 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <td>${response[i].reply}</td>
             <td>${response[i].status}</td>
             <td>${response[i].rating}</td>
-            <td><a href='#update-feedback-container' class='update' 
-            data-id='${response[i]._id}'
-            data-feedback-id='${response[i].feedback_id}' 
-            data-name='${response[i].username}' 
-            data-topic='${response[i].topic}'
-            data-email='${response[i].email}' 
-            data-msg='${response[i].message}' 
-            data-reply='${response[i].reply}'>Update</a></td>
-            <td>Rate</td></tr>`
+            <td><a href='#'>Rate</a></td></tr>`
             
           }
         }
