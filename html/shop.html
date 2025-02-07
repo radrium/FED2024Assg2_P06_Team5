@@ -10,37 +10,28 @@
         <header>
             <nav>
                 <span class="hamburger" onclick="openNav()">&#9776;</span>
-                <b class="title">Shop</b>
-                <div class="dropdown" id="icon-btn">
-                    <button class="dropicon"><img src="../Images/Icon.png" width="30px"></button>
+                <b class="title">Home</b>
+                <div class="dropdown" id="icon-btn" style="display: block;">
+                    <button class="dropicon"><img src="../Images/Icon.png" width="30" alt="Icon"></button>
                     <div class="dropdown-content">
                         <a href="../html/profile.html">Edit Profile</a>
                         <a href="../html/friends.html" id="friends-page">Friends</a>
                         <a href="../html/feedback.html">Feedback</a>
-                        <a href="javascript:void(0)" id="signout-btn">Sign Out</a>
+                        <a href="../index.html" id="signout-btn">Sign Out</a>
                     </div>
                 </div>
                 <ul class="nav-links">
-                    <div class="dropdown" id="icon-btn">
-                        <button class="dropicon"><img src="../Images/Icon.png" width="30px"></button>
-                        <div class="dropdown-content">
-                            <a href="../html/profile.html">Edit Profile</a>
-                            <a href="../html/friends.html" id="friends-page">Friends</a>
-                            <a href="../html/feedback.html">Feedback</a>
-                            <a href="javascript:void(0)" id="signout-btn">Sign Out</a>
-                        </div>
-                    </div>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../html/shop.html">Shop</a></li>
                     <li><a href="../html/contact.html">Contact</a></li> 
                     <li><a href="../html/login.html" id="login-btn">Login</a></li>
                     <li><a href="../html/signup.html" id="signup-btn">Sign Up</a></li>
-                    <div class="search-container">
+                    <li class="search-container">
                         <form>
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit">&#128270</button>
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">&#128270;</button>
                         </form>
-                    </div>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -53,10 +44,10 @@
             <a href="../html/signup.html" id="sidenav-signup-btn">Sign Up</a>
         </div>
         <section class="contatiner">
-            <section id="Split">
+            <section class="Split">
                 <h1>Nike</h1>
             </section>
-            <section class="product-gallery" id="promotion">
+            <section class="product-gallery promotion">
                 <a href="product.html">
                     <article>
                         <img src="../Images/promotion/product1.png" alt="Product Image">
@@ -75,7 +66,7 @@
             <section id="Split">
                 <h1>Adidas</h1>
             </section>
-            <section class="product-gallery" id="promotion">
+            <section class="product-gallery promotion">
                 <article>
                     <img src="../Images/brand_products/adidas/adidas1.png" alt="Product Image">
                 </article>
@@ -89,10 +80,10 @@
                     <img src="../Images/brand_products/adidas/adidas4.png" alt="Product Image">
                 </article>
             </section>
-            <section id="Split">
+            <section class="Split">
                 <h1>Bape</h1>
             </section>
-            <section class="product-gallery" id="promotion">
+            <section class="product-gallery promotion">
                 <article>
                     <img src="../Images/brand_products/bape/bape1.png" alt="Product Image">
                 </article>
@@ -106,10 +97,10 @@
                     <img src="../Images/brand_products/bape/bape4.png" alt="Product Image">
                 </article>
             </section>
-            <section id="Split">
+            <section class="Split">
                 <h1>Eric Emanuel</h1>
             </section>
-            <section class="product-gallery" id="promotion">
+            <section class="product-gallery promotion">
                 <article>
                     <img src="../Images/brand_products/ee/ee1.png" alt="Product Image">
                 </article>
@@ -124,7 +115,6 @@
                 </article>
             </section>
         </section>
-    </body>
     <script src="../js/script.js" defer></script>
-</html>
+</body>
 </html>

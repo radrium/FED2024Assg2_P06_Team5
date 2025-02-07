@@ -12,7 +12,7 @@
                 <span class="hamburger" onclick="openNav()">&#9776;</span>
                 <b class="title">Home</b>
                 <div class="dropdown" id="icon-btn" style="display: block;">
-                    <button class="dropicon"><img src="Images/Icon.png" width="30px"></button>
+                    <button class="dropicon"><img src="Images/Icon.png" width="30" alt="Icon"></button>
                     <div class="dropdown-content">
                         <a href="html/profile.html">Edit Profile</a>
                         <a href="html/friends.html" id="friends-page">Friends</a>
@@ -21,26 +21,17 @@
                     </div>
                 </div>
                 <ul class="nav-links">
-                    <div class="dropdown" id="icon-btn">
-                        <button class="dropicon"><img src="Images/Icon.png" width="30px"></button>
-                        <div class="dropdown-content">
-                            <a href="html/profile.html">Edit Profile</a>
-                            <a href="html/friends.html" id="friends-page">Friends</a>
-                            <a href="html/feedback.html">Feedback</a>
-                            <a href="javascript:void(0)" id="signout-btn">Sign Out</a>
-                        </div>
-                    </div>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="html/shop.html">Shop</a></li>
                     <li><a href="html/contact.html">Contact</a></li> 
                     <li><a href="html/login.html" id="login-btn">Login</a></li>
                     <li><a href="html/signup.html" id="signup-btn">Sign Up</a></li>
-                    <div class="search-container">
+                    <li class="search-container">
                         <form>
                         <input type="text" placeholder="Search.." name="search">
-                        <button type="submit">&#128270</button>
+                        <button type="submit">&#128270;</button>
                         </form>
-                    </div>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -57,11 +48,11 @@
         </section>
 
         <section class="contatiner">
-            <section id="Split">
-                <h1>Category</h1>
+            <div class="Split">
+                <h2>Category</h2>
                 <a href="html/category.html">See More</a>
-            </section>
-            <section class="product-gallery categories" id="category">
+            </div>
+            <div class="product-gallery categories" id="category">
                 <a href="html/jacket.html">
                     <article>
                         <h3>Jackets and Hoodies</h3>
@@ -82,46 +73,54 @@
                         <h3>Accessories</h3>
                     </article>
                 </a>
-            </section>
-            <section id="Split">
-                <h1>Promotion</h1>
+            </div>
+            <div class="Split">
+                <h2>Promotion</h2>
                 <a href="html/shop.html">See More</a>
-            </section>
-            <section class="product-gallery" id="promotion">
+            </div>
+            <div class="product-gallery" id="promotion">
                 <a href="html/product.html">
                     <article>
                         <img src="Images/promotion/product1.png" alt="Product Image">
+                        <h3>Jacket</h3>
                     </article>
                 </a>
                 <article>
                     <img src="Images/promotion/product2.png" alt="Product Image">
+                    <h3>Jacket</h3>
                 </article>
                 <article>
                     <img src="Images/promotion/product3.png" alt="Product Image">
+                    <h3>Cap</h3>
                 </article>
                 <article>
                     <img src="Images/promotion/product4.png" alt="Product Image">
+                    <h3>Short</h3>
                 </article>
-            </section>
-            <section id="Split">
-            <h1>Brand</h1>
+            </div>
+            <div class="Split">
+            <h2>Brand</h2>
             <a href="html/shop.html">See More</a>
-            </section>
-            <section class="product-gallery" id="brand">
-                <article onclick="">
+            </div>
+            <div class="product-gallery" id="brand">
+                <article>
                     <img src="Images/Brands/logo1.png" alt="Product Image">
+                    <h3>Nike</h3>
                 </article>
                 <article>
                     <img src="Images/Brands/logo2.png" alt="Product Image">
+                    <h3>Adidas</h3>
                 </article>
                 <article>
                     <img src="Images/Brands/logo3.png" alt="Product Image">
+                    <h3>Bape Shark</h3>
                 </article>
                 <article>
                     <img src="Images/Brands/logo4.png" alt="Product Image">
+                    <h3>Eric Emanuel</h3>
                 </article>
-            </section>
+            </div>
         </section>
-    </body>
     <script src="js/script.js" defer></script>
+    </body>
 </html>

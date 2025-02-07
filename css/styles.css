@@ -204,6 +204,13 @@ header nav {
     object-fit: fill;
 }
 
+.product-gallery > article h3 {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 0;
+}
+
 .product-gallery article img {
     display: block;
     width: 100%;
@@ -245,14 +252,14 @@ header nav {
     width: 40%;
 }
 
-#Split {
+.Split {
     padding: 0% 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#Split a {
+.Split a {
     color: red;
 }
 
@@ -604,7 +611,6 @@ article.product-details {
     .dropdown-content {
         right: 0;
     }
-    
 }
 
 /* Mobile view */

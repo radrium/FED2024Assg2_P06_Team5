@@ -10,37 +10,28 @@
         <header>
             <nav>
                 <span class="hamburger" onclick="openNav()">&#9776;</span>
-                <b class="title">Accessory</b>
-                <div class="dropdown" id="icon-btn">
-                    <button class="dropicon"><img src="../Images/Icon.png" width="30px"></button>
+                <b class="title">Home</b>
+                <div class="dropdown" id="icon-btn" style="display: block;">
+                    <button class="dropicon"><img src="../Images/Icon.png" width="30" alt="Icon"></button>
                     <div class="dropdown-content">
                         <a href="../html/profile.html">Edit Profile</a>
                         <a href="../html/friends.html" id="friends-page">Friends</a>
                         <a href="../html/feedback.html">Feedback</a>
-                        <a href="javascript:void(0)" id="signout-btn">Sign Out</a>
+                        <a href="../index.html" id="signout-btn">Sign Out</a>
                     </div>
                 </div>
                 <ul class="nav-links">
-                    <div class="dropdown" id="icon-btn">
-                        <button class="dropicon"><img src="../Images/Icon.png" width="30px"></button>
-                        <div class="dropdown-content">
-                            <a href="../html/profile.html">Edit Profile</a>
-                            <a href="../html/friends.html" id="friends-page">Friends</a>
-                            <a href="../html/feedback.html">Feedback</a>
-                            <a href="javascript:void(0)" id="signout-btn">Sign Out</a>
-                        </div>
-                    </div>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../html/shop.html">Shop</a></li>
                     <li><a href="../html/contact.html">Contact</a></li> 
                     <li><a href="../html/login.html" id="login-btn">Login</a></li>
                     <li><a href="../html/signup.html" id="signup-btn">Sign Up</a></li>
-                    <div class="search-container">
+                    <li class="search-container">
                         <form>
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit">&#128270</button>
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">&#128270;</button>
                         </form>
-                    </div>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -103,7 +94,8 @@
                     </article>
                     <h3>Price: $90.00</h3>
                 </div>
+            </section>
         </section>
-    </body>
     <script src="../js/script.js" defer></script>
+    </body>
 </html>
