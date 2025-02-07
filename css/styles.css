@@ -496,6 +496,7 @@ article.product-details {
 .feedback-container {
     max-width: 600px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
   
 .admin-panel h1, .user-panel h1 {
