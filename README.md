@@ -1,75 +1,86 @@
-# Your Project's Name
+# FED2024Assg2_P06_Team5
 
-One or two paragraphs providing an overview of your project. Tell us about your project.
+This project is a basic e-commerce website for MokeSell, a fictional online clothing store. It features a user-friendly interface with product browsing, user accounts, and contact forms.
 
-Essentially, this part is your sales pitch.
- 
 ## Design Process
- 
-Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+This website is designed for users who are interested in browsing and purchasing clothing items online. The primary goals for users are:
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. 
-These files should themselves either be included as a pdf file in the project itself (in an separate directory)
-Include the Adobe XD wireframe as a folder. You can include the XD share url. 
+- **Easy navigation:** Users should be able to easily find the products they are interested in.
+- **Product information:** Users should be able to easily find detailed information about each product, including images and descriptions.
+- **User accounts:** Registered users should be able to create an account and manage their profile information, so that they can personalize their shopping experience.
+- **Secure checkout:** Users should be able to safely and securely purchase products online.
+- **Contact support:** Users should be able to easily contact customer support with any questions or concerns.
+
+**User Stories:**
+
+- As a user, I want to be able to browse products by category, so that I can easily find the items I am interested in.
+- As a user, I want to be able to view detailed information about each product, including images and descriptions, so that I can make an informed purchase decision.
+- As a registered user, I want to be able to create an account and manage my profile information, so that I can personalize my shopping experience.
+- As a registered user, I want to be able to view and track my order history, so that I can easily manage my orders.
+- As a user, I want to be able to contact customer support with any questions or concerns, so that I can receive assistance.
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- **Home Page:** Displays featured products and provides links to other sections of the website.
+- **Shop Page:** Allows users to browse products by category.
+- **Product Page:** Displays detailed information about a specific product, including images, descriptions, and pricing. 
+- **User Account Management:**
+    - Account Creation and Login: Users can create an account and log in to the platform. √
+    - Profile Management: Users can update their profile information and manage their account settings. √
+- **Feedback and Support:**
+    - Feedback Submission: Users can submit feedback on issues or problems and categorize them. √
+    - Support Staff Assignment: Feedback is assigned to support staff for resolution. √ 
+- **Contact Page:** Allows users to submit a contact form to reach out to customer support.
+- **Login/Signup:** Allows users to login to their existing accounts or create new accounts.
+- **Search Functionality:** Allows users to search for specific products.
 
 ### Features Left to Implement
-- Another feature idea
+
+- **Follow Feature:** Users can follow other users to receive updates on new listings.
+- **Create Listings:** Sellers can create listings by selecting categories, uploading photos, and providing item details.
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
-
-
-## Assistive AI
-
-In this section you should document the process of using AI tools eg, ChatGPT, Gemini etc to help you with the development of features/functionalities of your web application. (Failure to document your use of AI tools will result in loss of marks.) Example below:
-
-1. Spotify API:
-ChatGPT was used to help with the implementation of the Spotify API (include screenshots of generated AI codes.)
-
-
-![sample img](readme_img/sample.JPG)
+- **HTML:** Used for structuring the web pages.
+- **CSS:** Used for styling the visual appearance of the website.
+- **JavaScript:** Used for adding interactivity and dynamic functionality to the website.
 
 ## Testing
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+**Manual Testing Scenarios:**
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+**1. User Account Management:**
+    * **Account Creation:**
+        * Create a new user account.
+        * Verify that the account creation process is successful and that the user is redirected to the appropriate page (e.g., dashboard, profile page).
+    * **Login:**
+        * Login with the newly created account.
+        * Verify that the login process is successful and that the user is redirected to the appropriate page (e.g., dashboard, profile page).
+    * **Profile Management:**
+        * Update user profile information (e.g., name, email, password).
+        * Verify that the changes are saved successfully.
+        * Test password change functionality (if implemented).
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+**2. Login/Signup:**
+    * Verify that the login and signup forms are displayed correctly.
+    * Attempt to login with invalid credentials and verify that an error message is displayed.
+    * Successfully login with valid credentials.
+    * Attempt to create an account with existing email and verify that an error message is displayed.
+    * Successfully create a new account.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+**3. Responsiveness:**
+    * Test the website on different devices and screen sizes (desktop, tablet, mobile) to ensure proper responsiveness and functionality across all platforms.
 
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- Product descriptions and other content are placeholder text for this example.
 
 ### Media
-- The photos used in this site were obtained from ...
+- Product images are placeholder images and may not be used for commercial purposes.
 
 ### Acknowledgements
-
-- I received inspiration for this project from X
+- This project was inspired by Shopee and Carousell.
