@@ -9,13 +9,13 @@
     <body>
         <header>
             <nav>
-                <span class="hamburger" onclick="openNav()">&#9776;</span>
+                <span class="hamburger" onclick="openNav()" aria-label="Open menu">&#9776;</span>
                 <b class="title">Category</b>
                 <div class="dropdown" id="icon-btn" style="display: block;">
-                    <button class="dropicon"><img src="../Images/Icon.png" width="30" alt="Icon"></button>
+                    <button class="dropicon" aria-label="User settings"><img src="../Images/Icon.png" width="30" alt="User Icon"></button>
                     <div class="dropdown-content">
                         <a href="../html/profile.html">Edit Profile</a>
-                        <a href="../html/friends.html" id="friends-page">Friends</a>
+                        <a href="../html/friends.html" id="friends-page-link">Friends</a>
                         <a href="../html/feedback.html">Feedback</a>
                         <a href="../index.html" id="signout-btn">Sign Out</a>
                     </div>
@@ -27,242 +27,239 @@
                     <li><a href="../html/login.html" id="login-btn">Login</a></li>
                     <li><a href="../html/signup.html" id="signup-btn">Sign Up</a></li>
                     <li class="search-container">
-                        <form>
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit">&#128270;</button>
+                        <form action="#" method="get">
+                            <input type="text" placeholder="Search.." name="search" aria-label="Search products">
+                            <button type="submit" aria-label="Search">&#128270;</button>
                         </form>
                     </li>
                 </ul>
             </nav>
         </header>
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Close menu">&times;</a>
             <a href="../index.html">Home</a>
             <a href="../html/shop.html">Shop</a>
             <a href="../html/contact.html">Contact</a>
             <a href="../html/login.html" id="sidenav-login-btn">Login</a>
             <a href="../html/signup.html" id="sidenav-signup-btn">Sign Up</a>
             <div class="search-container">
-                <form>
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit">&#128270;</button>
+                <form action="#" method="get">
+                    <input type="text" placeholder="Search.." name="search" aria-label="Search products">
+                    <button type="submit" aria-label="Search">&#128270;</button>
                 </form>
             </div>
         </div>
-        <h1 class="header">Jackets and Hoodies</h1>
-        <section class="contatiner">
+        <main>
+            <h1 class="header">Jackets and Hoodies</h1>
             <section class="product-gallery promotion">
                 <div class="items">
                     <a href="product.html">
                         <article>
-                            <img src="../Images/promotion/product1.png" alt="Product Image">
+                            <img src="../Images/promotion/product1.png" alt="Jacket 1">
                         </article>
                     </a>
                     <h3>Price: $50.00</h3>
                 </div>
                 <div class="items">
                     <article>
-                        <img src="../Images/brand_products/bape/bape1.png" alt="Product Image">
+                        <img src="../Images/brand_products/bape/bape1.png" alt="Bape T-shirt 1">
                     </article>
                     <h3>Price: $100.00</h3>
                 </div>
                 <div class="items">
                     <article>
-                        <img src="../Images/brand_products/bape/bape2.png" alt="Product Image">
+                        <img src="../Images/brand_products/bape/bape2.png" alt="Bape T-shirt 2">
                     </article>
                     <h3>Price: $100.00</h3>
                 </div>
                 <div class="items">
                     <article>
-                        <img src="../Images/brand_products/bape/bape3.png" alt="Product Image">
+                        <img src="../Images/brand_products/bape/bape3.png" alt="Bape T-shirt 3">
                     </article>
                     <h3>Price: $100.00</h3>
                 </div>
                 <div class="items">
                     <article>
-                        <img src="../Images/products/jackets/jacket5.png" alt="Product Image">
+                        <img src="../Images/products/jackets/jacket5.png" alt="Jacket 2">
                     </article>
                     <h3>Price: $50.00</h3>
                 </div>
                 <div class="items">
                     <article>
-                        <img src="../Images/products/jackets/jacket6.png" alt="Product Image">
+                        <img src="../Images/products/jackets/jacket6.png" alt="Jacket 3">
                     </article>
                     <h3>Price: $50.00</h3>
                 </div>
                 <div class="items">
                     <article>
-                        <img src="../Images/products/jackets/jacket7.png" alt="Product Image">
+                        <img src="../Images/products/jackets/jacket7.png" alt="Jacket 4">
                     </article>
                     <h3>Price: $50.00</h3>
                 </div>
                 <div class="items">
                     <article>
-                        <img src="../Images/brand_products/bape/bape4.png" alt="Product Image">
+                        <img src="../Images/brand_products/bape/bape4.png" alt="Bape T-shirt 4">
                     </article>
                     <h3>Price: $100.00</h3>
                 </div>
             </section>
-        </section>
-        <h1 class="header">Shirts</h1>
-        <section class="contatiner">
-            <section class="product-gallery promotion">
-                    <div class="items">
-                        <article>
-                            <img src="../Images/products/shirts/shirt1.png" alt="Product Image">
-                        </article>
-                        <h3>Price: $20.00</h3>
-                    </div>
-                    <div class="items">
-                        <article>
-                            <img src="../Images/products/shirts/shirt2.png" alt="Product Image">
-                        </article>
-                        <h3>Price: $24.00</h3>
-                    </div>
-                    <div class="items">
-                        <article>
-                            <img src="../Images/products/shirts/shirt3.png" alt="Product Image">
-                        </article>
-                        <h3>Price: $10.00</h3>
-                    </div>
-                    <div class="items">
-                        <article>
-                            <img src="../Images/products/shirts/shirt4.png" alt="Product Image">
-                        </article>
-                        <h3>Price: $12.00</h3>
-                    </div>
-                    <div class="items">
-                        <article>
-                            <img src="../Images/products/shirts/shirt5.png" alt="Product Image">
-                        </article>
-                        <h3>Price: $30.00</h3>
-                    </div>
-                    <div class="items">
-                        <article>
-                            <img src="../Images/products/shirts/shirt6.png" alt="Product Image">
-                        </article>
-                        <h3>Price: $15.00</h3>
-                    </div>
-                    <div class="items">
-                        <article>
-                            <img src="../Images/products/shirts/shirt7.png" alt="Product Image">
-                        </article>
-                        <h3>Price: $16.00</h3>
-                    </div>
-                    <div class="items">
-                        <article>
-                            <img src="../Images/products/shirts/shirt8.png" alt="Product Image">
-                        </article>
-                        <h3>Price: $21.00</h3>
-                    </div>
-            </section>
-        </section>
-        <h1 class="header">Shorts and Pants</h1>
-        <section class="contatiner">
+
+            <h1 class="header">Shirts</h1>
             <section class="product-gallery promotion">
                 <div class="items">
                     <article>
-                        <img src="../Images/products/shorts/shorts1.png" alt="Product Image">
-                    </article>
-                    <h3>Price: $30.00</h3>
-                </div>
-                <div class="items">
-                    <article>
-                        <img src="../Images/products/shorts/shorts2.png" alt="Product Image">
-                    </article>
-                    <h3>Price: $30.00</h3>
-                </div>
-                <div class="items">
-                    <article>
-                        <img src="../Images/products/shorts/shorts3.png" alt="Product Image">
-                    </article>
-                    <h3>Price: $30.00</h3>
-                </div>
-                <div class="items">
-                    <article>
-                        <img src="../Images/products/shorts/shorts4.png" alt="Product Image">
-                    </article>
-                    <h3>Price: $30.00</h3>
-                </div>
-                <div class="items">
-                    <article>
-                        <img src="../Images/products/shorts/shorts5.png" alt="Product Image">
-                    </article>
-                    <h3>Price: $30.00</h3>
-                </div>
-                <div class="items">
-                    <article>
-                        <img src="../Images/products/shorts/shorts6.png" alt="Product Image">
-                    </article>
-                    <h3>Price: $30.00</h3>
-                </div>
-                <div class="items">
-                    <article>
-                        <img src="../Images/products/shorts/shorts7.png" alt="Product Image">
-                    </article>
-                    <h3>Price: $30.00</h3>
-                </div>
-                <div class="items">
-                    <article>
-                        <img src="../Images/products/shorts/shorts8.png" alt="Product Image">
-                    </article>
-                    <h3>Price: $30.00</h3>
-                </div>
-            </section>
-        </section>
-        <h1 class="header">Accessories</h1>
-        <section class="contatiner">
-            <section class="product-gallery promotion">
-                <div class="items">
-                    <article>
-                        <img src="../Images/products/accessory/accessory1.png" alt="Product Image">
+                        <img src="../Images/products/shirts/shirt1.png" alt="Shirt 1">
                     </article>
                     <h3>Price: $20.00</h3>
                 </div>
                 <div class="items">
                     <article>
-                        <img src="../Images/products/accessory/accessory2.png" alt="Product Image">
+                        <img src="../Images/products/shirts/shirt2.png" alt="Shirt 2">
+                    </article>
+                    <h3>Price: $24.00</h3>
+                </div>
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/shirts/shirt3.png" alt="Shirt 3">
+                    </article>
+                    <h3>Price: $10.00</h3>
+                </div>
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/shirts/shirt4.png" alt="Shirt 4">
+                    </article>
+                    <h3>Price: $12.00</h3>
+                </div>
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/shirts/shirt5.png" alt="Shirt 5">
                     </article>
                     <h3>Price: $30.00</h3>
                 </div>
                 <div class="items">
                     <article>
-                        <img src="../Images/products/accessory/accessory3.png" alt="Product Image">
+                        <img src="../Images/products/shirts/shirt6.png" alt="Shirt 6">
+                    </article>
+                    <h3>Price: $15.00</h3>
+                </div>
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/shirts/shirt7.png" alt="Shirt 7">
+                    </article>
+                    <h3>Price: $16.00</h3>
+                </div>
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/shirts/shirt8.png" alt="Shirt 8">
+                    </article>
+                    <h3>Price: $21.00</h3>
+                </div>
+            </section>
+
+            <h1 class="header">Shorts and Pants</h1>
+            <section class="product-gallery promotion">
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/shorts/shorts1.png" alt="Shorts 1">
+                    </article>
+                    <h3>Price: $30.00</h3>
+                </div>
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/shorts/shorts2.png" alt="Shorts 2">
+                    </article>
+                    <h3>Price: $30.00</h3>
+                </div>
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/shorts/shorts3.png" alt="Shorts 3">
+                    </article>
+                    <h3>Price: $30.00</h3>
+                </div>
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/shorts/shorts4.png" alt="Shorts 4">
+                    </article>
+                    <h3>Price: $30.00</h3>
+                </div>
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/shorts/shorts5.png" alt="Shorts 5">
+                    </article>
+                    <h3>Price: $30.00</h3>
+                </div>
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/shorts/shorts6.png" alt="Shorts 6">
+                    </article>
+                    <h3>Price: $30.00</h3>
+                </div>
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/shorts/shorts7.png" alt="Shorts 7">
+                    </article>
+                    <h3>Price: $30.00</h3>
+                </div>
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/shorts/shorts8.png" alt="Shorts 8">
+                    </article>
+                    <h3>Price: $30.00</h3>
+                </div>
+            </section>
+
+            <h1 class="header">Accessories</h1>
+            <section class="product-gallery promotion">
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/accessory/accessory1.png" alt="Accessory 1">
+                    </article>
+                    <h3>Price: $20.00</h3>
+                </div>
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/accessory/accessory2.png" alt="Accessory 2">
+                    </article>
+                    <h3>Price: $30.00</h3>
+                </div>
+                <div class="items">
+                    <article>
+                        <img src="../Images/products/accessory/accessory3.png" alt="Accessory 3">
                     </article>
                     <h3>Price: $40.00</h3>
                 </div>
                 <div class="items">
                     <article>
-                        <img src="../Images/products/accessory/accessory4.png" alt="Product Image">
+                        <img src="../Images/products/accessory/accessory4.png" alt="Accessory 4">
                     </article>
                     <h3>Price: $50.00</h3>
                 </div>
                 <div class="items">
                     <article>
-                        <img src="../Images/products/accessory/accessory5.png" alt="Product Image">
+                        <img src="../Images/products/accessory/accessory5.png" alt="Accessory 5">
                     </article>
                     <h3>Price: $60.00</h3>
                 </div>
                 <div class="items">
                     <article>
-                        <img src="../Images/products/accessory/accessory6.png" alt="Product Image">
+                        <img src="../Images/products/accessory/accessory6.png" alt="Accessory 6">
                     </article>
                     <h3>Price: $70.00</h3>
                 </div>
                 <div class="items">
                     <article>
-                        <img src="../Images/products/accessory/accessory7.png" alt="Product Image">
+                        <img src="../Images/products/accessory/accessory7.png" alt="Accessory 7">
                     </article>
                     <h3>Price: $80.00</h3>
                 </div>
                 <div class="items">
                     <article>
-                        <img src="../Images/products/shorts/shorts8.png" alt="Product Image">
+                        <img src="../Images/products/accessory/accessory8.png" alt="Accessory 8">
                     </article>
                     <h3>Price: $90.00</h3>
                 </div>
             </section>
-        </section>
+        </main>
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-left">
@@ -286,6 +283,6 @@
                 </div>
             </div>
         </footer>
-    <script src="../js/script.js"></script>
     </body>
+    <script src="../js/script.js" defer></script>
 </html>
