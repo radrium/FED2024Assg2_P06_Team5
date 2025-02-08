@@ -144,11 +144,18 @@ header nav {
 
 /* Banner */
 .hero {
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
     padding: 120px 25px;
     background-image: url('../Images/hero.jpg');
     background-size: cover;
+}
+
+.hero-home {
+    display: flex;
+    background-image: url('../Images/hero.jpg');
+    padding: 120px 25px;
+    justify-content: center;
 }
 
 /* Search Bar */
