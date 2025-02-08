@@ -9,7 +9,6 @@ This website is designed for users who are interested in browsing and purchasing
 - **Easy navigation:** Users should be able to easily find the products they are interested in.
 - **Product information:** Users should be able to easily find detailed information about each product, including images and descriptions.
 - **User accounts:** Registered users should be able to create an account and manage their profile information, so that they can personalize their shopping experience.
-- **Secure checkout:** Users should be able to safely and securely purchase products online.
 - **Contact support:** Users should be able to easily contact customer support with any questions or concerns.
 
 **User Stories:**
@@ -17,7 +16,6 @@ This website is designed for users who are interested in browsing and purchasing
 - As a user, I want to be able to browse products by category, so that I can easily find the items I am interested in.
 - As a user, I want to be able to view detailed information about each product, including images and descriptions, so that I can make an informed purchase decision.
 - As a registered user, I want to be able to create an account and manage my profile information, so that I can personalize my shopping experience.
-- As a registered user, I want to be able to view and track my order history, so that I can easily manage my orders.
 - As a user, I want to be able to contact customer support with any questions or concerns, so that I can receive assistance.
 
 ## Features
@@ -28,14 +26,16 @@ This website is designed for users who are interested in browsing and purchasing
 - **Shop Page:** Allows users to browse products by category.
 - **Product Page:** Displays detailed information about a specific product, including images, descriptions, and pricing. 
 - **User Account Management:**
-    - Account Creation and Login: Users can create an account and log in to the platform. √
-    - Profile Management: Users can update their profile information and manage their account settings. √
+    - Account Creation and Login: Users can create an account and log in to the platform.
+    - Profile Management: Users can update their profile information and manage their account settings.
 - **Feedback and Support:**
-    - Feedback Submission: Users can submit feedback on issues or problems and categorize them. √
-    - Support Staff Assignment: Feedback is assigned to support staff for resolution. √ 
+    - Feedback Submission: Users can submit feedback on issues or problems and categorize them. 
+    - Support Staff Assignment: Feedback is assigned to support staff for resolution.
 - **Contact Page:** Allows users to submit a contact form to reach out to customer support.
 - **Login/Signup:** Allows users to login to their existing accounts or create new accounts.
-- **Search Functionality:** Allows users to search for specific products.
+- **Search Functionality:** 
+    - Search Functionality: Buyers can search for specific items using keywords. 
+    - Category Browsing: Buyers can browse listings by category and sub-category. 
 
 ### Features Left to Implement
 
