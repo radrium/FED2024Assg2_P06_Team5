@@ -252,6 +252,16 @@ header nav {
     width: 40%;
 }
 
+.contact-container div {
+    width: 40%;
+}
+
+div.name-fields {
+    width: 100%;
+}
+
+
+
 .Split {
     padding: 0% 2%;
     display: flex;
