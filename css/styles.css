@@ -144,7 +144,8 @@ header nav {
 
 /* Banner */
 .hero {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding: 120px 25px;
     background-image: url('../Images/hero.jpg');
     background-size: cover;
