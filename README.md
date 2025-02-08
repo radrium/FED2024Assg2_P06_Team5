@@ -2,6 +2,11 @@
 
 This project is a basic e-commerce website for MokeSell, a fictional online clothing store. It features a user-friendly interface with product browsing, user accounts, and contact forms.
 
+## Github Page and Video Link
+
+- **Github Page(https://github.com/radrium/FED2024Assg2_P06_Team5)**
+- **Video Link(https://drive.google.com/drive/folders/1ZvJFP1GkpmSGGPV4f75NOl9T4edqMbpF?usp=drive_link)**
+
 ## Design Process
 
 This website is designed for users who are interested in browsing and purchasing clothing items online. The primary goals for users are:
