@@ -29,15 +29,19 @@ This website is designed for users who are interested in browsing and purchasing
 
 - **Home Page:** Displays featured products and provides links to other sections of the website.
 - **Shop Page:** Allows users to browse products by category.
-- **Product Page:** Displays detailed information about a specific product, including images, descriptions, and pricing. 
+- **Product Page:** Displays detailed information about a specific product, including images, descriptions, and pricing.
+
+#### Wei Hang's Features
 - **User Account Management:**
     - Account Creation and Login: Users can create an account and log in to the platform.
     - Profile Management: Users can update their profile information and manage their account settings.
+- **Login/Signup:** Allows users to login to their existing accounts or create new accounts.
+
+#### Gleen's Features
 - **Feedback and Support:**
     - Feedback Submission: Users can submit feedback on issues or problems and categorize them. 
     - Support Staff Assignment: Feedback is assigned to support staff for resolution.
 - **Contact Page:** Allows users to submit a contact form to reach out to customer support.
-- **Login/Signup:** Allows users to login to their existing accounts or create new accounts.
 - **Search Functionality:** 
     - Search Functionality: Buyers can search for specific items using keywords. 
     - Category Browsing: Buyers can browse listings by category and sub-category. 

@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             // Find the user to update
-            let user = data.find(u => u.email === email); // Adjust the condition if needed
-
+            let user = data.find(u => u.email === email);
+            
             if (user) {
                 // Update the user data
                 user.username = userName;
